@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/DynamicFonts/title_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://resources/DynamicFonts/menu_buttons_dynamicfont.tres" type="DynamicFont" id=2]
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="Welcome" type="Label" parent="VBoxContainer"]
+margin_top = 207.0
+margin_right = 1024.0
+margin_bottom = 262.0
+custom_fonts/font = ExtResource( 1 )
+text = "Welcome to the Godot Bootstrap Project!"
+align = 1
+valign = 1
+
+[node name="Guide" type="Label" parent="VBoxContainer"]
+margin_left = 144.0
+margin_top = 266.0
+margin_right = 880.0
+margin_bottom = 392.0
+size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 2 )
+text = "To start your own bootstrapped project launch
+`setup.sh` on MacOS/Linux or `setup.bat`
+on Windows. Happy game dev!"
+align = 1
+valign = 1

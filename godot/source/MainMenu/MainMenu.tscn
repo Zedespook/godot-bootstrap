@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://resources/DynamicFonts/title_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://resources/DynamicFonts/menu_buttons_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://source/MainMenu/MainMenu.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.25
+anchor_top = 0.2
+anchor_right = 0.75
+anchor_bottom = 0.8
+custom_constants/separation = 24
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="MenuContainer"]
+margin_top = 98.0
+margin_right = 512.0
+margin_bottom = 153.0
+custom_fonts/font = ExtResource( 1 )
+text = "Game Title"
+align = 1
+valign = 1
+
+[node name="ButtonContainer" type="VBoxContainer" parent="MenuContainer"]
+margin_top = 177.0
+margin_right = 512.0
+margin_bottom = 261.0
+alignment = 1
+
+[node name="StartButton" type="Button" parent="MenuContainer/ButtonContainer"]
+margin_left = 217.0
+margin_right = 295.0
+margin_bottom = 40.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 15
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+custom_fonts/font = ExtResource( 2 )
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="MenuContainer/ButtonContainer"]
+margin_left = 223.0
+margin_top = 44.0
+margin_right = 289.0
+margin_bottom = 84.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 15
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+custom_fonts/font = ExtResource( 2 )
+text = "Quit"
