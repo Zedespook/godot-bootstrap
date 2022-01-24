@@ -7,6 +7,7 @@ extends Control
 # Path for the main game scene, change if you have something else.
 const GAME_SCENE_PATH: String = "res://source/Game/Game.tscn"
 
+
 # Runs after the node has been initialized.
 func _ready() -> void:
 	# Connecting the start button's "pressed" function to change to `Game.tscn` scene.

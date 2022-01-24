@@ -55,12 +55,12 @@ margin_bottom = 40.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 15
+custom_fonts/font = ExtResource( 2 )
 custom_styles/hover = SubResource( 6 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/focus = SubResource( 8 )
 custom_styles/disabled = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
-custom_fonts/font = ExtResource( 2 )
 text = "Start"
 
 [node name="QuitButton" type="Button" parent="MenuContainer/ButtonContainer"]
@@ -71,10 +71,10 @@ margin_bottom = 84.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 15
+custom_fonts/font = ExtResource( 2 )
 custom_styles/hover = SubResource( 6 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/focus = SubResource( 8 )
 custom_styles/disabled = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
-custom_fonts/font = ExtResource( 2 )
 text = "Quit"
